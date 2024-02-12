@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html >
+    <head>
+        <title>Form PHP</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/style.css">
+        <link  href="https://fonts.googleapis.com/css?family-Montserrat:400,500,800"
+        rel="stylesheet">
+    </head>
+    <body>
+        <h2>Обработка форм на PHP</h2>
+        <form action="input.php" method="POST">
+        <p><b>Введите имя:</b><br>
+        <input type="text" name="firstname" class="field"/> </p>
+        <p><b>Онлайн или офлайн курсы?</b><br>
+        <input type="radio" name="eduform" value="очно"/>хочу приходить к вам <br>
+        <input type="radio" name="eduform" value="заочно"/>хочу заниматься из дома </p><br>
+        <p><b>Выберите курсы</b><br>
+        <select name="courses[]" class="list" size="10" multiple="multiple">
+            <option value="HTML">HTML</option>
+            <option value="PHP">PHP</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="SQL">SQL</option>
+        </select><br>
+        <input class="ok" type="submit" value="Вперед!">
+        </form>
+    </body>
+</html>
